@@ -6,7 +6,7 @@ function User() {
   const [users, setUsers] = useState([])
 
  const serverURL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3001' ;
- console.log(serverURL)
+ //console.log(serverURL)
 
   useEffect(() => {
     axios.get(`${serverURL}/users`)

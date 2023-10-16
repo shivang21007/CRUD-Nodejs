@@ -24,8 +24,9 @@ const handleDelete = (id) => {
   .catch(err => console.log(err))
 }
   return (
-    <div className="d-flex vh-100 bg-primary justify-content-center align-item-center">
-      <div className="m-5 w-50 h-40 bg-white rounded p-3" >
+    <div className="d-flex vh-100 bg-dark justify-content-center align-items-center">
+      <div className="w-auto bg-white rounded p-3" >
+        <p className="text-small rounded">Made by Shivang ❤</p>
         <Link to="/create" className='btn btn-success'>Add +</Link>
         <table className="table">
           <thead>

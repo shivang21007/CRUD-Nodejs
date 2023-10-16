@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
 
 function UpdateUser() {
@@ -31,8 +31,10 @@ const Update = (e) => {
   .catch(err => console.log(err))
 }
   return (
-    <div className="d-flex vh-100 bg-primary justify-content-center align-item-center">
-      <div className='m-5 w-50 h-50 bg-white rounded p-3'>
+    <div className="d-flex vh-100 bg-dark justify-content-center align-items-center">
+      <div className='m-5 w-50 bg-white rounded p-3'>
+      <p className="text-small rounded">Made by Shivang ❤</p>
+      <Link to="/" className='btn btn-info'>Home</Link>
         <form onSubmit={Update}>
           <h2>Update User</h2>
           <div className='mb-2'>

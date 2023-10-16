@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import {useNavigate} from  'react-router-dom'
+import {useNavigate, Link} from  'react-router-dom'
 
 function CreateUser() {
   const [name, setName] = useState()
@@ -19,8 +19,10 @@ const navigate = useNavigate();
   }
 
   return (
-    <div className="d-flex vh-100 bg-primary justify-content-center align-item-center">
-      <div className='m-5 w-50 h-50 bg-white rounded p-3'>
+    <div className="d-flex vh-100 bg-dark justify-content-center align-items-center">
+      <div className='m-5 w-50 bg-white rounded p-3'>
+      <p className="text-small rounded">Made by Shivang ❤</p>
+      <Link to="/" className='btn btn-info'>Home</Link>
 
         <form onSubmit={Submit}>
           <h2>Add User</h2>

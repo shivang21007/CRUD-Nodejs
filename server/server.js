@@ -11,6 +11,12 @@ app.use(cors())
 app.use(express.json())
 
 mongoose.connect(`${process.env.DB_URL}`)
+.then((conn) => {
+    console.log(`DB Connected`);
+})
+.catch((err) => {
+    console.log(err);
+});
 
 app.get('/', (req,res) => {
     res.send('Hello from server.')
